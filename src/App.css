@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #2193b0, #6dd5ed);
+}
+.card {
+  position: relative;
+  width: 350px;
+  height: 190px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.card:hover {
+  height: 740px;
+}
+.imgBox {
+  position: absolute;
+  left: 50%;
+  top: -70px;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  /* box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35); */
+  transition: 0.5s;
+}
+.card:hover .imgBox {
+  height: 250px;
+  width: 250px;
 }
 
-.App-link {
-  color: #61dafb;
+.imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .content {
+  margin-top: -15px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.card .content .details {
+  padding: 45px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(400px);
+}
+.card:hover .content .details {
+  transform: translateY(0px);
+}
+.card .content .details h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card .content .details h2 span {
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.card .content .details .data {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.card .content .details h3 {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+.card .content .details h3 span {
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.card .content .details .actionBtn {
+  display: flex;
+  justify-content: space-between;
+}
+.card .content .details .actionBtn button {
+  padding: 7px 22px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 500;
+  background: #2193b0;
+  color: #fff;
+  cursor: pointer;
+}
+.card .content .details .actionBtn button:nth-child(2) {
+  border: 1px solid #999;
+  color: #999;
+  background: #fff;
+}
+.card .AboutMe h3 {
+  margin: 10px 0;
+}
+.card .AboutMe p {
+  justify-content: center;
+}
+.card .social-media {
+  background: #2193b0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 40px;
+}
+.card .social-media i {
+  color: #fff;
+  font-size: 22px;
+
+  cursor: pointer;
 }
