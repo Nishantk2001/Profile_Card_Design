@@ -16,19 +16,19 @@
 .card {
   position: relative;
   width: 350px;
-  height: 190px;
+  height: 210px;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
 .card:hover {
-  height: 740px;
+  height: 650px;
 }
 .imgBox {
   position: absolute;
   left: 50%;
-  top: -70px;
+  top: -60px;
   transform: translateX(-50%);
   width: 150px;
   height: 150px;
@@ -39,8 +39,8 @@
   transition: 0.5s;
 }
 .card:hover .imgBox {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
 }
 
 .imgBox img {
@@ -62,7 +62,7 @@
   overflow: hidden;
 }
 .card .content .details {
-  padding: 45px;
+  padding: 40px;
   text-align: center;
   width: 100%;
   transition: 0.5s;
@@ -86,7 +86,7 @@
 .card .content .details .data {
   display: flex;
   justify-content: space-between;
-  margin: 8px 0;
+  margin: 10px 0;
 }
 .card .content .details h3 {
   font-size: 1em;

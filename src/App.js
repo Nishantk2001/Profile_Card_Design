@@ -25,7 +25,7 @@ function App() {
               <h3>
                 30K
                 <br />
-                <span>Follower</span>
+                <span>Followers</span>
               </h3>
               <h3>
                 100
@@ -39,7 +39,7 @@ function App() {
                   Email <i class="fa-solid fa-envelope"></i>
                 </button>
               </a>
-              <a href="www.linkedin.com/in/nishant-kumar-3104a2259">
+              <a href="https://www.linkedin.com/in/nishant-kumar-3104a2259">
                 <button>
                   Linkdin <i class="fa-brands fa-linkedin"></i>
                 </button>
@@ -55,10 +55,18 @@ function App() {
               </p>
             </div>
             <div className="social-media">
-              <i class="fa-brands fa-linkedin"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-github"></i>
+              <a href="https://www.linkedin.com/in/nishant-kumar-3104a2259">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/mumanianishant?igshid=NGVhN2U2NjQ0Yg==">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/nishantmumania">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://github.com/Nishantk2001">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </div>
         </div>
